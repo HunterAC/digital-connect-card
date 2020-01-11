@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>We want to know you!</title>
+        <style>
+            /* @import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'); */
+
+            .form-style-8{
+                font-family: 'Open Sans Condensed', arial, sans;
+                width: 750px;
+                padding: 30px;
+                background: #FFFFFF;
+                margin: 50px auto;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+                -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+                -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+            }
+            .form-style-8 h2{
+                background: #4D4D4D;
+                text-transform: uppercase;
+                font-family: 'Open Sans Condensed', sans-serif;
+                color: #ffffff;
+                font-size: 26px;
+                font-weight: 100;
+                padding: 20px;
+                margin: -30px -30px 30px -30px;
+            }
+            .form-style-8 input[type="text"],
+            .form-style-8 input[type="date"],
+            .form-style-8 input[type="datetime"],
+            .form-style-8 input[type="email"],
+            .form-style-8 input[type="number"],
+            .form-style-8 input[type="search"],
+            .form-style-8 input[type="time"],
+            .form-style-8 input[type="url"],
+            .form-style-8 input[type="password"],
+            .form-style-8 textarea,
+            .form-style-8 select 
+            {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                outline: none;
+                display: block;
+                width: 100%;
+                padding: 7px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                background: transparent;
+                margin-bottom: 10px;
+                font: 24px Arial, Helvetica, sans-serif;
+                height: 55px;
+            }
+            .form-style-8 textarea{
+                resize:none;
+                overflow: hidden;
+            }
+            .form-style-8 input[type="button"], 
+            .form-style-8 input[type="submit"]{
+                /* -moz-box-shadow: inset 0px 1px 0px 0px rgb(190, 82, 82);
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgb(190, 82, 82);
+                /* box-shadow: inset 0px 0px 0px 0px rgb(180, 72, 72); */
+                background-color: rgb(190, 82, 82);
+                /* border: 0px solid rgb(172, 67, 67); */
+                border: 0;
+                box-shadow: none;
+                border-radius: 0px;
+                /* display: inline-block; */
+                cursor: pointer;
+                color: #FFFFFF;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 24px;
+                padding: 8px 18px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .form-style-8 input[type="button"]:hover, 
+            .form-style-8 input[type="submit"]:hover {
+                /* background:linear-gradient(to bottom, rgb(212, 94, 94) 5%, #30C9C9 100%); */
+                background-color:rgb(190, 82, 82);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <input type="text" name="firstname" placeholder="First Name" required>
+        <input type="text" name="lastname" placeholder="Last Name" required>
+        <input type="text" name="email" placeholder="Email Address" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="age" placeholder="Age" required>
+        <input type="text" name="gender" placeholder="Gender" required> -->
+        <div class="form-style-8">
+            <h2>We want to know you!</h2>
+            <form method="post" action="/newstudent">
+                <input type="text" name="firstname" placeholder="First Name*" required>
+                <input type="text" name="lastname" placeholder="Last Name*" required>
+                <input type="text" name="email" placeholder="Email Address*" required>
+                <input type="text" name="phone" placeholder="Phone Number">
+                <input type="text" name="age" placeholder="Age">
+                <input type="text" name="gender" placeholder="Gender">
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+    </body>
+</html>
